@@ -1,0 +1,28 @@
+.banner {
+  color: white;
+  text-align: center;
+  height:calc(110vh - 80px);;
+  background-size: cover !important;
+  position: relative;
+}
+
+.intro{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+}
+.intro h2{
+font-size: 100px;
+}
+.titulo{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  width: 700px;
+  text-align: left;
+}
+
+.titulo p{
+font-size: 60px;
+}

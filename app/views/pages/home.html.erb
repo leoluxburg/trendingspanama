@@ -1,0 +1,35 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,40,250,0.3) 20%, rgba(0,0,250,0.2) 50%), url('<%= image_path('gas.png')%> ');  background-position: center;">
+  <div class ="intro padded">
+    <h2>Tendencia: </h2>
+  </div>
+  <br>
+  <div class="titulo padded">
+    <p><%=@post.titulo%></hp>
+      <br>
+      <h6 class="btn btn-primary">Ver más</h6>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12  col-sm-8 col-sm-offset-2">
+      <% @posts.reverse_each do |post| %>
+      <%= link_to post_path(@post) do %>
+      <br>
+      <br>
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,40,250,0.3) 20%, rgba(0,0,250,0.2) 50%),url('<%= image_path('gas.png')%>');  background-position: center;">
+        <div class="card-title">
+          <p><%= post.titulo %></p>
+        </div>
+        <div class="card-btn">
+          <h6 class="btn btn-primary">Ver más</h6>
+        </div>
+      </div>
+      <%end%>
+      <% end %>
+
+    </div>
+  </div>
+
