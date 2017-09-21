@@ -1,2 +1,29 @@
-<h2><%= @post.titulo %></h2>
-<p><%= @post.content %></p>
+<div class="container">
+  <div class="container">
+    <div class="expocicion" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('<%= cl_image_path @post.photo, height: 300, width: 400, crop: :fill %>')">
+      <div class= "padded">
+        <h1><%=@post.titulo%></h1>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="padded content">
+          <p><%=@post.content%></p>
+          <br>
+          <p><%=@post.content2%></p>
+          <br>
+          <p><%=@post.content3%></p>
+          <br>
+          <p><%=@post.content4%></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

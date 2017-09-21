@@ -1,8 +1,18 @@
-  <%= simple_form_for @post do |f| %>
-  <%= f.input :titulo %>
-  <%= f.input :content %>
-  <%= f.input :author %>
-  <%= f.input :publish %>
-  <%= f.input :photoguy %>
-  <%= f.submit%>
-  <% end %>
+  <div class="padded">
+    <div class="container">
+      <%= simple_form_for @post do |f| %>
+      <%= f.input :titulo %>
+      <%= f.input :content %>
+      <%= f.input :content2 %>
+      <%= f.input :content3 %>
+      <%= f.input :content4 %>
+      <%= f.input :content5 %>
+      <%= f.input :author %>
+      <%= f.input :publish %>
+      <%= f.input :photoguy %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit%>
+      <% end %>
+    </div>
+  </div>

@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:show]
   def index
     @posts = Post.all
   end
@@ -41,7 +42,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:titulo, :content, :author, :publish, :photoguy)
+    params.require(:post).permit(:titulo, :content, :author, :publish, :photoguy,:content2, :content3, :content4, :content5, :photo, :photo_cache)
   end
 
 end

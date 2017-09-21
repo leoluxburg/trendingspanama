@@ -2,7 +2,7 @@
 
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background-color: #323435;
+  background-color: black;
   transition: all 0.3s ease;
   display: flex;
   height: 100px;
@@ -23,13 +23,13 @@
   height: 50px;
 }
 .navbar-wagon a{
-  color: #6fa1ba;
+  color: white;
   font-size:70px;
   text-decoration: none;
 
 }
 .navbar-wagon h3{
-  color: #6fa1ba;
+  color: white;
   text-decoration: none;
 }
 /* Dropdown menu */
